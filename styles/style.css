@@ -14,6 +14,7 @@
   min-height: 600px;
   max-height: 756px;
   border: 2px solid blue;
+  display: flex;
   /* parameters for the header section */
 }
 .logo {
@@ -25,34 +26,85 @@
   top: 30px;
   left: 64px;
   z-index: 6;
-  border: 2px solid red;
 }
 .header__title {
   width: 730px;
   margin-left: 64px;
-  flex-direction: row;
-  align-items: center;
+  align-self: center;
   z-index: 5;
-  border: 2px solid red;
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
 }
 .header__subtitle {
-  position: absolute;
-  bottom: 0;
   width: 388px;
-  margin-bottom: 30px;
-  margin-left: 64px;
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
   z-index: 4;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
 }
 .header__main-illustration {
   width: 756px;
   height: 608px;
-  border: 2px solid red;
   position: absolute;
   bottom: 0;
   right: 0;
+  z-index: 3;
+}
+.header__square {
+  height: 568px;
+  width: 568px;
+  position: absolute;
+  top: 64px;
+  right: 0;
+  z-index: 2;
+  background-color: #2f80ed;
+}
+.content {
+  /*padding-top: 100px;*/
+  border: 3px dotted violet;
+}
+.description {
+  display: flex;
+  border: 2px solid red;
+  justify-content: center;
+}
+.two-columns {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0 100px;
+  border: 2px solid orangered;
+}
+.two-columns__brief {
+  margin: 0;
+  width: 175px;
+  align-items: flex-start;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  border: 2px solid green;
+}
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid purple;
+}
+.two-columns__paragraph {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+.two-columns__span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: bold;
 }
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
 .header__square-pic {
