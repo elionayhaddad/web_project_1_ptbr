@@ -7,6 +7,7 @@
   margin: 0 auto;
   /* this ensures that all content is centered on screens wider than 1600px */
   font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #f2f2f2;
 }
 
 .header {
@@ -49,6 +50,7 @@
 .header__link {
   color: #2f80ed;
   text-decoration: none;
+  margin: 0;
 }
 .header__main-illustration {
   width: 756px;
@@ -69,7 +71,6 @@
 }
 .content {
   /*padding-top: 100px;*/
-  border: 3px dotted violet;
 }
 .description {
   display: flex;
@@ -164,16 +165,155 @@
   font-weight: normal;
   border: 2px solid red;
 }
+.feynman {
+  border: 2px dotted darkgoldenrod;
+  height: 790px;
+  background-image: url(../images/feynman.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 867px 637px;
+}
+.feynman__title {
+  width: 775px;
+  text-align: center;
+  margin: auto;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+}
+.feynman__subtitle {
+  text-align: center;
+  margin: 70px auto 0;
+  align-self: center;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+.feynman__link {
+  position: absolute;
+  top: 400%;
+  z-index: 100;
+  right: 48px;
+  text-decoration: none;
+  color: #2f80ed;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
 .header__square-pic {
   height: 568px;
   width: 568px;
 }
-
+.kaufman {
+  background-color: #1f1f1f;
+  padding: 90px 0 90px;
+  overflow: hidden;
+}
+.section-title_theme_dark {
+  width: 60%;
+  color: #fff;
+  margin: auto;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+}
+.section-subtitle_theme_dark {
+  width: 60%;
+  color: #fff;
+  margin: 20px auto 0;
+  text-align: center;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+.table_theme_dark {
+  width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 5;
+  justify-content: space-between;
+}
 /* including elements with key-value modifiers */
 .table__cell_theme_dark {
   width: 200px;
   color: white;
-  margin-right: 0;
-  margin-top: 80px;
+  margin: 80px 0 0;
+  padding: 0;
+  z-index: 4;
+}
+.table__heading_theme_dark {
+  list-style: none;
+  margin-bottom: 20px;
+  z-index: 3;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+.table__text_theme_dark {
+  list-style: none;
+  z-index: 2;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+.kaufman-triangle {
+  position: absolute;
+  top: 467%;
+  right: -124px;
+  height: 660px;
+  width: 636px;
+}
+.footer {
+  background-color: #1f1f1f;
+  min-height: 350px;
+  display: flex;
+}
+.footer__columns {
+  margin: 60px auto 40px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__columns_content_copyright {
+  flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.logo_place_footer {
+  width: 183px;
+  height: 35px;
+}
+.footer__author {
+  margin: 18px 0 18px;
+  color: #fff;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+.footer__column-heading {
+  color: #fff;
+  margin: 0 0 20px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.footer__list {
+  list-style: none;
+  color: #fff;
+}
+.footer__column-link {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  padding: 0;
+}
+.footer__social-icons {
+  margin-right: 10px;
+  height: 16px;
+  width: 16px;
 }
