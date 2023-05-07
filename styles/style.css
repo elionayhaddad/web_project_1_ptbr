@@ -39,7 +39,7 @@
 .header__subtitle {
   width: 388px;
   position: absolute;
-  bottom: 35px;
+  bottom: 30px;
   left: 64px;
   z-index: 2;
   line-height: 25px;
@@ -47,9 +47,7 @@
   font-weight: normal;
 }
 .header__link {
-  position: absolute;
-  left: 64px;
-  bottom: 30px;
+  display: flex;
   text-decoration: none;
   color: #2f80ed;
 }
@@ -84,11 +82,9 @@
 .two-columns__brief {
   margin: 0;
   width: 175px;
-  align-items: flex-start;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  text-decoration: none;
   color: #2f80ed;
 }
 .two-columns__main-text {
@@ -112,28 +108,27 @@
 .digits {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 0 0 100px;
 }
 .section-title {
   width: 60%;
   margin: 0 0 20px;
   text-align: center;
-  align-self: center;
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
 }
 .section-subtitle {
   width: 60%;
-  margin-bottom: 60px;
   text-align: center;
-  align-self: center;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
 }
 .table {
-  margin: auto;
+  margin: 60px 0 0;
+  row-gap: 60px;
   width: 1100px;
   display: flex;
   justify-content: space-between;
@@ -143,8 +138,7 @@
   width: 250px;
   padding-left: 0;
   margin: 0;
-  display: flex;
-  flex-direction: column;
+  list-style: none;
 }
 .table__heading {
   line-height: 1.15;
@@ -163,23 +157,24 @@
   height: 790px;
   background-color: #f2f2f2;
   position: relative;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .feynman__title {
   width: 775px;
   text-align: center;
-  margin: auto;
-  position: relative;
-  top: 100px;
+  margin: 0 0 70px;
+  z-index: 8;
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
 }
 .feynman__subtitle {
   text-align: center;
-  margin: auto;
-  position: relative;
-  top: 170px;
-  align-self: center;
+  margin: 0;
+  z-index: 7;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -201,68 +196,42 @@
   bottom: 0;
   left: 0;
 }
-/* here we have two examples of selectors in order to remind you how to set styles for elements */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
-}
 .kaufman {
   background-color: #1f1f1f;
   position: relative;
   overflow: hidden;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .section-title_theme_dark {
-  width: 60%;
   color: #fff;
-  margin: 90px auto 20px;
-  position: relative;
-  text-align: center;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: bold;
+  z-index: 8;
 }
 .section-subtitle_theme_dark {
-  width: 60%;
   color: #fff;
-  margin: 0 auto 0;
-  text-align: center;
-  position: relative;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
+  z-index: 7;
 }
 .table_theme_dark {
-  width: 1100px;
-  margin: 0 auto 90px;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  margin-top: 0;
+  row-gap: 80px;
 }
 /* including elements with key-value modifiers */
 .table__cell_theme_dark {
   width: 200px;
-  color: white;
-  position: relative;
-  margin: 80px 0 0;
-  padding: 0;
+  z-index: 6;
 }
 .table__heading_theme_dark {
-  list-style: none;
-  margin-bottom: 20px;
-  position: relative;
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: bold;
+  color: #fff;
 }
 .table__text_theme_dark {
-  list-style: none;
-  line-height: 1.2;
-  position: relative;
-  font-size: 18px;
-  font-weight: normal;
+  color: #fff;
 }
 .kaufman-triangle {
+  width: 660px;
+  height: 636px;
   position: absolute;
   top: 0;
   order: 4;
@@ -272,17 +241,18 @@
   background-color: #1f1f1f;
   min-height: 350px;
   display: flex;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  justify-content: center;
+  box-sizing: border-box;
 }
 .footer__columns {
-  margin: 60px auto 40px;
   width: 90%;
   display: flex;
   justify-content: space-between;
 }
 .footer__columns_content_copyright {
   flex-basis: 711px;
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
 }
 .logo_place_footer {
@@ -296,21 +266,34 @@
   font-size: 18px;
   font-weight: normal;
 }
+.footer__column_content_about {
+  row-gap: 20px;
+}
+.footer__column_content_social {
+  row-gap: 20px;
+}
 .footer__column-heading {
   color: #fff;
-  margin: 0 0 20px;
+  margin: 0;
   text-align: center;
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
 }
+.footer__column {
+  display: flex;
+  flex-direction: column;
+}
 .footer__list {
   list-style: none;
-  color: #fff;
+  margin: 0;
+  padding: 0;
 }
 .footer__column-link {
   line-height: 30px;
   font-size: 18px;
+  text-decoration: none;
+  color: #fff;
   font-weight: normal;
   padding: 0;
 }
