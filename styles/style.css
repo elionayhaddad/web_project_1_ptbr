@@ -47,9 +47,8 @@
   font-weight: normal;
 }
 .header__link {
-  color: #2f80ed;
   text-decoration: none;
-  margin: 0;
+  color: #2f80ed;
 }
 .header__main-illustration {
   width: 756px;
@@ -97,10 +96,10 @@
   row-gap: 30px;
 }
 .two-columns__paragraph {
+  margin: 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  margin: 0;
 }
 .two-columns__span-accent {
   line-height: 34px;
