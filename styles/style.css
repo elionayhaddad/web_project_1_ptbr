@@ -12,7 +12,9 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  position: relative;
   display: flex;
+  align-items: center;
   background-color: #f2f2f2;
   /* parameters for the header section */
 }
@@ -24,13 +26,12 @@
   position: absolute;
   top: 30px;
   left: 64px;
-  z-index: 6;
+  z-index: 4;
 }
 .header__title {
   width: 730px;
-  margin-left: 64px;
-  align-self: center;
-  z-index: 5;
+  margin: 0 0 0 64px;
+  z-index: 3;
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
@@ -40,7 +41,7 @@
   position: absolute;
   bottom: 30px;
   left: 64px;
-  z-index: 4;
+  z-index: 2;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -56,21 +57,22 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  z-index: 3;
+  z-index: 1;
 }
 .header__square {
   height: 568px;
   width: 568px;
   position: absolute;
+  object-fit: contain;
   top: 64px;
   right: 0;
-  z-index: 2;
+  z-index: 0;
   background-color: #2f80ed;
 }
 .description {
   display: flex;
   justify-content: center;
-  padding: 100px 0 100px;
+  margin: 100px 0 100px;
 }
 .two-columns {
   width: 80%;
@@ -92,6 +94,7 @@
   min-width: 784px;
   display: flex;
   flex-direction: column;
+  row-gap: 30px;
 }
 .two-columns__paragraph {
   line-height: 34px;
@@ -107,7 +110,7 @@
 .digits {
   display: flex;
   flex-direction: column;
-  padding: 0 0 100px;
+  margin: 0 0 100px;
 }
 .section-title {
   width: 60%;
@@ -157,22 +160,23 @@
 .feynman {
   height: 790px;
   background-color: #f2f2f2;
-  background-image: url(../images/feynman.png);
-  background-repeat: no-repeat;
-  background-position: left bottom;
-  background-size: 867px 637px;
+  position: relative;
 }
 .feynman__title {
   width: 775px;
   text-align: center;
   margin: auto;
+  position: relative;
+  top: 100px;
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
 }
 .feynman__subtitle {
   text-align: center;
-  margin: 70px auto 0;
+  margin: auto;
+  position: relative;
+  top: 170px;
   align-self: center;
   line-height: 51px;
   font-size: 36px;
@@ -180,14 +184,20 @@
 }
 .feynman__link {
   position: absolute;
-  top: 400%;
-  z-index: 100;
+  top: 50%;
   right: 48px;
   text-decoration: none;
   color: #2f80ed;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
+}
+.feynman__image {
+  width: 867px;
+  height: 637px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
 .header__square-pic {
@@ -196,13 +206,14 @@
 }
 .kaufman {
   background-color: #1f1f1f;
-  padding: 90px 0 90px;
+  position: relative;
   overflow: hidden;
 }
 .section-title_theme_dark {
   width: 60%;
   color: #fff;
-  margin: auto;
+  margin: 90px auto 20px;
+  position: relative;
   text-align: center;
   line-height: 1.15;
   font-size: 60px;
@@ -211,15 +222,17 @@
 .section-subtitle_theme_dark {
   width: 60%;
   color: #fff;
-  margin: 20px auto 0;
+  margin: 0 auto 0;
   text-align: center;
+  position: relative;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
 }
 .table_theme_dark {
   width: 1100px;
-  margin: auto;
+  margin: 0 auto 90px;
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -228,12 +241,14 @@
 .table__cell_theme_dark {
   width: 200px;
   color: white;
+  position: relative;
   margin: 80px 0 0;
   padding: 0;
 }
 .table__heading_theme_dark {
   list-style: none;
   margin-bottom: 20px;
+  position: relative;
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
@@ -241,23 +256,23 @@
 .table__text_theme_dark {
   list-style: none;
   line-height: 1.2;
+  position: relative;
   font-size: 18px;
   font-weight: normal;
 }
 .kaufman-triangle {
   position: absolute;
+  top: 0;
+  order: 4;
   right: -124px;
-  height: 660px;
-  width: 636px;
 }
 .footer {
   background-color: #1f1f1f;
   min-height: 350px;
-  padding: 60px 0 40px;
   display: flex;
 }
 .footer__columns {
-  margin: auto;
+  margin: 60px auto 40px;
   width: 90%;
   display: flex;
   justify-content: space-between;
