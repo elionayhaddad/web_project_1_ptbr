@@ -1,0 +1,51 @@
+.header {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+  /* parameters for the header section */
+}
+.header__title {
+  width: 730px;
+  margin: 0 0 0 64px;
+  z-index: 3;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: bold;
+}
+.header__subtitle {
+  width: 388px;
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  z-index: 2;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+.header__link {
+  display: flex;
+  text-decoration: none;
+  color: #2f80ed;
+}
+.header__main-illustration {
+  width: 756px;
+  height: 608px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+.header__square {
+  height: 568px;
+  width: 568px;
+  position: absolute;
+  object-fit: contain;
+  top: 64px;
+  right: 0;
+  z-index: 0;
+  background-color: #2f80ed;
+}
