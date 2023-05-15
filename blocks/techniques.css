@@ -1,0 +1,10 @@
+.techniques {
+  margin: 0px auto 0px;
+  padding-top: 100px; /*verificar se possivel criar um modificador
+  ou mix para o section-title e assim aplicar margin nele ao invés de padding aqui*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid red;
+}
