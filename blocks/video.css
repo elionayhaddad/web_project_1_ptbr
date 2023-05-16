@@ -1,0 +1,15 @@
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+.video__iframes {
+  margin: 50px auto 0;
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+}
+.video__iframe {
+  z-index: 3;
+}

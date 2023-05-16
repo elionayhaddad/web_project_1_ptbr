@@ -1,0 +1,44 @@
+.khan {
+  outline-style: solid;
+  outline-color: red;
+  outline-width: 1px;
+}
+.khan__container {
+  width: 80%;
+  margin: auto;
+  outline-style: solid;
+  outline-color: red;
+  outline-width: 1px;
+}
+.khan__author {
+}
+.khan__title {
+}
+.khan__quote {
+  margin: 50px 0 36px;
+  width: 790px;
+}
+.khan__quote-author {
+}
+.khan__quote-author-subline {
+  margin: 10px 0 68px;
+}
+.khan__book-container {
+  outline-style: solid;
+  outline-color: red;
+  outline-width: 1px;
+  display: flex;
+  column-gap: 48px;
+}
+.khan__book-pic {
+  width: 608px;
+  height: 620px;
+  outline-style: solid;
+  outline-color: red;
+  outline-width: 1px;
+}
+.khan__buy-link {
+  outline-style: solid;
+  outline-color: red;
+  outline-width: 1px;
+}
