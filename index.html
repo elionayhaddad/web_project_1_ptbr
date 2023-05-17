@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aprendendo a aprender</title>
-    <link rel="stylesheet" href="vendor/normalize.css" />
     <link rel="stylesheet" href="pages/index.css" />
   </head>
   <body>
@@ -19,7 +18,7 @@
         <p class="header__subtitle">
           As técnicas de aprendizado mais eficazes que você pode aplicar ao seu
           cotidiano.
-          <a class="header__link" href="#">Saiba mais &rarr;</a>
+          <a class="header__link transition" href="#">Saiba mais &rarr;</a>
         </p>
         <img
           class="header__main-illustration"
@@ -143,14 +142,24 @@
           <div class="video__iframes">
             <iframe
               class="video__iframe"
-              src="https://www.youtube.com/watch?v=5MgBikgcWnY"
+              src="https://www.youtube.com/embed/5MgBikgcWnY"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+              gyroscope; picture-in-picture; web-share"
+              allowfullscreen
               width="515px"
               height="316px"
               allowfullscreen
             ></iframe>
             <iframe
               class="video__iframe"
-              src="https://www.youtube.com/watch?v=arj7oStGLkU"
+              src="https://www.youtube.com/embed/arj7oStGLkU"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+              gyroscope; picture-in-picture; web-share"
+              allowfullscreen
               width="515px"
               height="316px"
             ></iframe>
@@ -188,7 +197,7 @@
           />
           <h2 class="feynman__title">A Técnica de Feynman</h2>
           <h3 class="feynman__subtitle">Aprender sem esquecer</h3>
-          <a class="feynman__link" href="#">Mais &rarr;</a>
+          <a class="feynman__link transition" href="#">Mais &rarr;</a>
         </section>
         <section class="digits">
           <h2 class="section-title">Fatos e números</h2>
@@ -268,13 +277,13 @@
                 src="images/images_sprint-2/khan-book-2.png"
                 alt="Foto da capa do livro 'The One World School House' de Salman Khan"
               />
-              <a class="khan__buy-link">Comprar &rarr;</a>
+              <a class="khan__buy-link transition" href="#">Comprar &rarr;</a>
             </div>
           </article>
         </section>
         <section class="kaufman">
           <img
-            class="kaufman-triangle"
+            class="kaufman-triangle rotation"
             src="images/kaufman-triangle.svg"
             alt="Um
           grande triângulo azul, sobre o qual Josh Kaufman reclama
@@ -349,6 +358,44 @@
             </li>
           </ul>
         </section>
+        <section class="resources">
+          <h2 class="section-title">Recursos úteis</h2>
+          <h3 class="section-subtitle">
+            Material adicional sobre técnicas e hacks de aprendizagem
+          </h3>
+          <div class="resources__logo-zone">
+            <a class="resources__logo transition" href="#">
+              <img
+                class="resources__logo"
+                src="images/images_sprint-2/logo/resources-tedED.png"
+                alt="TED-ED: uma plataforma que proporciona um conjunto de ferramentas 
+                que permite que os professores possam criar e partilhar aulas interativas 
+                a partir de um vídeo."
+            /></a>
+            <a class="resources__logo transition" href="#">
+              <img
+                class="resources__logo"
+                src="images/images_sprint-2/logo/resources-Medium.png"
+                alt="Medium: uma plataforma híbrida online para publicação."
+            /></a>
+            <a class="resources__logo transition" href="#">
+              <img
+                class="resources__logo transition"
+                src="images/images_sprint-2/logo/resources-dezeen.png"
+                alt="Dezeen: a revista de arquitetura, interiores e design mais popular
+                e influente do mundo que traz uma seleção cuidadosamente editada dos
+                melhores projetos."
+            /></a>
+            <a class="resources__logo transition" href="#">
+              <img
+                class="resources__logo"
+                src="images/images_sprint-2/logo/resources-goodreads.png"
+                alt="Goodreads: uma plataforma na qual os usuários têm a possibilidade de 
+                adicionar livros a suas estantes pessoais, avaliar e rever livros, ver 
+                o que seus amigos e autores estão lendo. "
+            /></a>
+          </div>
+        </section>
       </main>
       <footer class="footer">
         <div class="footer__columns">
@@ -363,9 +410,11 @@
           <div class="footer__column footer__column_content_about">
             <h4 class="footer__column-heading">Sobre Practicum by Yandex</h4>
             <ul class="footer__list">
-              <li><a class="footer__column-link">Página Inicial</a></li>
-              <li><a class="footer__column-link">Missão</a></li>
-              <li><a class="footer__column-link">Profissões</a></li>
+              <li>
+                <a class="footer__column-link transition">Página Inicial</a>
+              </li>
+              <li><a class="footer__column-link transition">Missão</a></li>
+              <li><a class="footer__column-link transition">Profissões</a></li>
             </ul>
           </div>
           <div class="footer__column footer__column_content_social">
@@ -376,14 +425,14 @@
                   class="footer__social-icons"
                   src="images/facebook_white.svg"
                   alt="Ícone do Facebook"
-                /><a class="footer__column-link">Facebook</a>
+                /><a class="footer__column-link transition">Facebook</a>
               </li>
               <li>
                 <img
                   class="footer__social-icons"
                   src="images/instagram_white.svg"
                   alt="Ícone do Instagram"
-                /><a class="footer__column-link">Instagram</a>
+                /><a class="footer__column-link transition">Instagram</a>
               </li>
             </ul>
           </div>
