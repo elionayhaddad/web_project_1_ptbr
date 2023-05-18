@@ -39,12 +39,12 @@
 }
 .khan__book-container {
   display: flex;
-  height: 620px;
-  overflow: hidden;
 }
 .khan__book-pic {
   width: 608px;
-  height: 927px;
+  height: 620px;
+  object-fit: cover;
+  object-position: top 0 right 0;
   margin-right: 48px;
 }
 .khan__buy-link {
